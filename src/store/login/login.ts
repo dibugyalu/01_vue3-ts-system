@@ -5,7 +5,7 @@ import { localCache } from '@/utils/cache'
 
 const LOGIN_TOKEN = 'login/token'
 
-const useLoginStore = defineStore('login', {
+const useLoginStore = defineStore('logins', {
   state: () => ({
     id: '',
     token: localCache.getCache(LOGIN_TOKEN) ?? '',
